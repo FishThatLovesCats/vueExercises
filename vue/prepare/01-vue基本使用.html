@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+    <div class="app" id = 'app'>
+        {{message}}
+        {{info}}
+        {{goodFriend.name}}
+        {{goodFriend.fans[1].name}}
+    </div>
+</body>
+
+</html>
+<!-- 开发环境版本，包含了有帮助的命令行警告 jquery.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- <script>
+   const vue = require('vue'); 
+</script> -->
+<script>
+// const app = new Vue({
+//     //选择器可以写css
+//     el:'.app',
+//     el:'div',
+//     //不要使用html 或者body 使用普通的元素
+//     el:'body',
+//     el:'#app',//建议写id选择器
+//     //数据
+//     data:{
+//         message:'hello vue!',
+//         info:'哈哈哈'
+//     }
+// })
+
+var app = new Vue({
+    //选择器 可以写css
+    el:'#app',//建议写id选择器
+    //数据
+    data:{
+        message:'666',
+        info:'555',
+        goodFriend:{
+            name:'小v',
+            skill:'rap',
+            fans:[{name:'佩奇'},{name:'乔治'}]
+        }
+    }
+})
+//对象传值，接收值用{{属性}},
+</script>
